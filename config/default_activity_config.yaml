@@ -1,0 +1,92 @@
+activity:
+  key: ''
+  name: ''
+  location: ''
+  start_datetime: ''
+  end_datetime: ''
+registration_zone:
+  cols:
+application_package:
+  cols:
+    personal_info:
+      capid:
+      last_name:
+      first_name:
+      member_type:
+      cap_grade:
+      grade_in_school:
+      gender:
+      religious_preference:
+      date_of_birth:
+      shirt_size:
+      height:
+      weight:
+      hair_color:
+      eye_color:
+    contact_info:
+      primary_phone_number:
+      secondary_phone_number:
+      email_address:
+    inbound_flight:
+      arrival_date:
+      arrival_time:
+      airline:
+      flight_number:
+    outbound_flight:
+      arrival_date:
+      arrival_time:
+      airline:
+      flight_number:
+    cadre_application:
+      classes_to_teach:
+      preferred_roles:
+        first:
+        second:
+        third:
+        fourth:
+        fifth:
+    resume:
+      squadron_roles:
+      encampments_attended:
+      cadre_roles:
+    cadet_otcs:
+      otc_blacklist:
+      otc_reactions:
+    health_history:
+      food_allergies:
+      other_allergies:
+      medical_conditions:
+      medical_condition_details:
+      vaccines:
+        tetanus:
+        hepatitis:
+        pneumonia:
+        varicella_vax:
+        varicella_date:
+        influenza:
+        covid19:
+      medications:
+    emergency_contact:
+      primary_contact:
+        name:
+        relationship:
+        phone_number:
+      secondary_contact:
+        name:
+        relationship:
+        phone_number:
+      medical_insurance:
+        company:
+        policy_number:
+        group_number:
+        copay:
+      prescription_insurance:
+        company:
+        policy_number:
+        group_number:
+        copay:
+      family_physician:
+        name:
+        phone_number:
+        mailing_address:
+    signature:
