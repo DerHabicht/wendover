@@ -16,8 +16,8 @@ install: bin/wendover
 	go run build/wendover/install.go $(CURDIR)
 	cp bin/wendover ${HOME}/.local/bin/
 
-.PHONY: install_dev
-install_dev: bin/wendover
+.PHONY: dev-install
+dev-install: bin/wendover
 	-rm -r ./testdata
 	mkdir -p ./testdata/config
 	mkdir -p ./testdata/cache

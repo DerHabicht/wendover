@@ -3,7 +3,7 @@ module github.com/derhabicht/wendover
 go 1.21.1
 
 require (
-	github.com/ag7if/go-files v0.1.0
+	github.com/ag7if/go-files v0.2.1
 	github.com/google/uuid v1.6.0
 	github.com/nyaruka/phonenumbers v1.3.2
 	github.com/pkg/errors v0.9.1

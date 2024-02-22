@@ -8,12 +8,6 @@ import (
 )
 
 func init() {
-	SetDefault("capwatch.orgid", "")
-	SetDefault("capwatch.username", "")
-	SetDefault("capwatch.refresh", 7)
-	SetDefault("unit.name", "")
-	SetDefault("unit.patch_image", "")
-
 	cwd, _ := os.Getwd()
 	logging.Trace().Str("cwd", cwd).Msg("")
 
