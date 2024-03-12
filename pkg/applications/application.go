@@ -10,10 +10,34 @@ import (
 
 type Application struct {
 	id                 uuid.UUID
-	Participant        participant.Participant
-	ContactInformation participant.ContactInformation
-	FlightInformation  *flights.FlightInformation
-	CadreApplication   CadreApplication
-	HealthInformation  health.Information
-	EmergencyContact   participant.ContactInformation
+	participant        participant.Participant
+	contactInformation participant.ContactInformation
+	flightInformation  *flights.FlightInformation
+	cadreApplication   CadreApplication
+	healthInformation  health.Information
+	emergencyContact   participant.ContactInformation
+}
+
+func NewApplication(
+	id uuid.UUID,
+	participant participant.Participant,
+	contactInformation participant.ContactInformation,
+	flightInformation *flights.FlightInformation,
+	cadreApplication CadreApplication,
+	healthInformation health.Information,
+	emergencyContact participant.ContactInformation,
+) Application {
+	return Application{
+		id:                 id,
+		participant:        participant,
+		contactInformation: contactInformation,
+		flightInformation:  flightInformation,
+		cadreApplication:   cadreApplication,
+		healthInformation:  healthInformation,
+		emergencyContact:   emergencyContact,
+	}
+}
+
+func (a *Application) ID() uuid.UUID {
+	return a.id
 }

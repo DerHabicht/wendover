@@ -2,9 +2,12 @@ package participant
 
 import (
 	"time"
+
+	"github.com/google/uuid"
 )
 
 type Participant struct {
+	id                  uuid.UUID
 	capid               uint
 	memberType          MemberType
 	lastName            string
@@ -17,6 +20,10 @@ type Participant struct {
 	hairColor           HairColor
 	eyeColor            EyeColor
 	tShirtSize          TShirtSize
+}
+
+func (p *Participant) ID() uuid.UUID {
+	return p.id
 }
 
 func (p *Participant) CAPID() uint {

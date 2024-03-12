@@ -1,9 +1,6 @@
 activity:
   key: ''
   name: ''
-  location: ''
-  start_datetime: ''
-  end_datetime: ''
 registration_zone:
   member_data:
     capid: ''
@@ -142,3 +139,20 @@ application_package:
       phone_number: ''
       mailing_address: ''
   signature: ''
+payment:
+  card_info:
+    last_4: ''
+    name_on_card: ''
+    expiration: ''
+  payment_info:
+    transaction_id: ''
+    transaction_date: ''
+    successful_transaction: ''
+    settled_status: ''
+    settled_amount: ''
+    credit_void: ''
+    credit_amount: ''
+  attendee_info:
+    full_name: ''
+    capid: ''
+    multiple_attendees: ''
